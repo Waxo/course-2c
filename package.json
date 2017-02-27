@@ -1,0 +1,39 @@
+{
+  "dependencies": {
+    "chai": "^3.5.0"
+  },
+  "name": "2c",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha --recursive",
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-exec": "^1.0.1",
+    "grunt-git": "^1.0.3",
+    "grunt-spawn-process": "^0.1.1",
+    "grunt-xo": "^0.15.0",
+    "load-grunt-tasks": "^3.5.2",
+    "time-grunt": "^1.4.0"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "browser",
+      "node",
+      "mocha"
+    ],
+    "space": 2,
+    "rules": {
+      "max-len": [
+        "error",
+        80,
+        2
+      ]
+    }
+  }
+}
