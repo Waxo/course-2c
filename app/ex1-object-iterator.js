@@ -1,6 +1,7 @@
 const alphaObject = obj => {
   const keysArray = [];
   for (const key in obj) {
+    /* istanbul ignore else */
     if (Object.prototype.hasOwnProperty.call(obj, key)) {
       keysArray.push(key);
     }
