@@ -24,6 +24,7 @@ typings/
 *.tgz
 .yarn-integrity
 .env
+.idea/*
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/dictionaries
