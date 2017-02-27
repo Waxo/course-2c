@@ -16,21 +16,21 @@ module.exports = grunt => {
     watch: {
       project: {
         files: ['app/**/*.js', 'test/**/*.js'],
-        tasks: ['xo', 'exec:test', 'spawnProcess:ivectors'],
+        tasks: ['xo', 'exec:test', 'spawnProcess:project'],
         options: {
           spawn: false
         }
       },
       prof: {
         files: ['app/**/*.js', 'test/**/*.js'],
-        tasks: ['xo', 'exec:test', 'git', 'spawnProcess:ivectors'],
+        tasks: ['xo', 'exec:test', 'git', 'spawnProcess:project'],
         options: {
           spawn: false
         }
       }
     },
     xo: {
-      target: ['project.js', 'app/**/*.js']
+      target: ['index.js', 'app/**/*.js', 'test/**/*.js']
     },
     gitadd: {
       task: {
@@ -59,7 +59,8 @@ module.exports = grunt => {
   grunt.registerTask('git', ['gitadd', 'gitcommit', 'gitpush']);
   grunt.registerTask('prof',
     ['xo', 'exec:test', 'spawnProcess:project', 'watch:prof']);
-  grunt.registerTask('no-test', ['xo', 'spawnProcess:project', 'watch:project']);
+  grunt.registerTask('no-test',
+    ['xo', 'spawnProcess:project', 'watch:project']);
   grunt.registerTask(
     'start', ['xo', 'exec:test', 'spawnProcess:project', 'watch:project']);
 };

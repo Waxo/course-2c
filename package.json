@@ -36,6 +36,11 @@
         80,
         2
       ]
-    }
+    },
+    "ignores": [
+      "Gruntfile.js",
+      "app/ex4-primary.js",
+      "test/ex4-primary.js"
+    ]
   }
 }
