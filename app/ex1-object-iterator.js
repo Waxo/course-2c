@@ -19,3 +19,5 @@ const alphaObject = obj => {
 };
 
 module.exports = {alphaObject};
+
+// TODO https://github.com/Waxo/course-2c.git

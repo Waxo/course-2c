@@ -28,19 +28,19 @@ describe('app/ex2-asynchronous.js', () => {
       stubConsoleLog.should.not.have.been.calledWith(0);
       stubConsoleLog.should.have.been.calledWith(1);
       stubConsoleLog.should.not.have.been.calledWith(2);
-      clock.tick(1001);
+      clock.tick(1000);
       stubConsoleLog.should.have.been.calledWith(2);
       stubConsoleLog.should.not.have.been.calledWith(3);
-      clock.tick(1001);
+      clock.tick(1000);
       stubConsoleLog.should.have.been.calledWith(3);
       stubConsoleLog.should.not.have.been.calledWith(4);
-      clock.tick(1001);
+      clock.tick(1000);
       stubConsoleLog.should.have.been.calledWith(4);
       stubConsoleLog.should.not.have.been.calledWith(5);
-      clock.tick(1001);
+      clock.tick(1000);
       stubConsoleLog.should.have.been.calledWith(5);
       stubConsoleLog.should.not.have.been.calledWith(6);
-      clock.tick(1001);
+      clock.tick(1000);
       stubConsoleLog.should.not.have.been.calledWith(6);
 
       stubConsoleLog.should.have.been.callCount(5);

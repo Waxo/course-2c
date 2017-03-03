@@ -15,14 +15,14 @@ module.exports = grunt => {
     },
     watch: {
       project: {
-        files: ['app/**/*.js', 'test/**/*.js'],
+        files: ['app/**/*.js', 'test/**/*.js', 'index.js'],
         tasks: ['xo', 'exec:test', 'spawnProcess:project'],
         options: {
           spawn: false
         }
       },
       prof: {
-        files: ['app/**/*.js', 'test/**/*.js'],
+        files: ['app/**/*.js', 'test/**/*.js', 'index.js'],
         tasks: ['xo', 'exec:test', 'git', 'spawnProcess:project'],
         options: {
           spawn: false
