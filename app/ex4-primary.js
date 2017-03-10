@@ -11,12 +11,12 @@ String.prototype.toNumber = function () {
   return Number(this.replace(/[^0-9]/g, ''));
 };
 
-// console.log('Contains number');
-// let ret = 'aze12qsd13wxc14'.containsNumber(12);
-// console.log(ret);
-//
-// console.log('hasNumber');
-// console.log('aze12qsd13wxc14'.hasNumber());
-//
-// console.log('toNumber');
-// console.log('aze12qsd13wxc14'.toNumber());
+console.log('Contains number');
+let ret = 'aze12qsd13wxc14'.containsNumber(12);
+console.log(ret);
+
+console.log('hasNumber');
+console.log('aze12qsd13wxc14'.hasNumber());
+
+console.log('toNumber');
+console.log('aze12qsd13wxc14'.toNumber());
